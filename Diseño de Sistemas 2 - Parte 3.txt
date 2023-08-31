@@ -1,0 +1,39 @@
+.- ¿Qué pasa cuando se corre el comando "tsc"?
+
+Cuando se ejecuta el comando tsc, se utiliza el compilador de TypeScript para compilar los archivos TypeScript en código JavaScript. Cuando ejecutamos este comando se realiza:
+. Análisis del código TypeScript: El compilador examina los archivos TypeScript que se proporcionaron como entrada y, analiza la sintaxis y la estructura del código para comprender las declaraciones de variables, funciones, clases, tipos y otros elementos del lenguaje.
+. Verificación de tipos: Se revisa las anotaciones de tipos y se verifica que el código cumpla con esas anotaciones.
+. Generación de código JavaScript: Una vez realizado los dos pasos anteriores, el compilador de TypeScript genera el equivalente en código JavaScript.
+. Salida de archivos JavaScript: El compilador generará archivos JavaScript con la misma estructura de carpetas que los archivos TypeScript de origen.
+. Finalización del proceso: Una vez generados los archivos JavaScript correspondientes, el proceso de compilación se completa y se obtendrá una salida en la línea de comandos que indica si la compilación fue exitosa o si hubo errores.
+
+Este proceso es necesario para transformar tu código TypeScript en algo que pueda ser ejecutado por los motores JavaScript en navegadores y entornos de Node.js.
+
+.- ¿Cómo esta organizada una clase?
+
+Una clase es una plantilla o plano para crear objetos. Posee atributos y funciones que definen el comportamiento y las características de los objetos que se crean a partir de ella.
+La estructura de una clase cuenta con:
+. Atributos: Son variables que almacenan datos asociados a la clase. Los atributos pueden representar características o estados de los objetos que se creen a partir de la clase. Se declaran en la parte superior de la clase y se pueden inicializar en el constructor.
+. Constructor: Es un método especial que se llama cuando se crea un objeto a partir de la clase. En él, se suelen asignar los valores iniciales a los atributos del objeto. Puede recibir parámetros que proporcionan los valores iniciales para los atributos.
+. Métodos: Son funciones que definen el comportamiento de los objetos creados a partir de la clase. Los métodos realizan operaciones y manipulan los datos almacenados en los atributos. Se definen debajo de los atributos y se pueden invocar en instancias de la clase.
+
+Se pueden agregar más métodos y atributos según sea necesario para definir el comportamiento y las características de la clase. Estos pueden ser públicos, privados, protegidos, etc., dependiendo de las necesidades y el lenguaje de programación utilizado.
+
+.- ¿Es correcto que un método auxiliar de una clase sea público? ¿Por qué?
+
+La visibilidad de un método auxiliar en una clase depende del diseño y de cómo se desea utilizar ese método en el programa. En general, los métodos auxiliares tienen una visibilidad privada o protegida. Esto se da por encapsulamiento, que implica ocultar los detalles internos y la implementación de una clase. Si un método auxiliar es público, se expone a otros objetos y partes del programa, lo que podría romper la encapsulación y permitir que se acceda directamente a detalles que no deberían ser accesibles desde fuera de la clase.
+El encapsulamiento conlleva a que el código sea claro, se prevengan errores reduciendo la probabilidad de llamar el método de forma incorrecta y, que el código sea flexible a cambios.
+
+.-Enumerar las características de una interfaz.
+
+Una interfaz es un conjunto de definiciones de métodos y atributos que una clase puede implementar. Define un contrato que las clases deben cumplir para ser consideradas compatibles con esa interfaz. Tiene las siguientes características:
+. Definición de métodos y atributos: Una interfaz puede contener declaraciones de métodos y atributos que deben ser implementados por cualquier clase que implemente la interfaz.
+. Contrato: Cualquier clase que implemente la interfaz debe proporcionar las implementaciones reales de los métodos y atributos definidos en la interfaz.
+. Abstracción: Las interfaces permiten crear abstracciones en el código, lo que facilita el diseño modular y la creación de componentes intercambiables.
+. No contiene implementación: No proporciona ninguna implementación real de los métodos y atributos que define.
+. Múltiple implementación: Una clase puede implementar varias interfaces. Esto permite que una clase cumpla con varios contratos diferentes y adopte múltiples comportamientos.
+. Herencia de interfaz: Una interfaz puede heredar de otras interfaces, lo que permite extender y combinar contratos existentes en una nueva interfaz.
+. Compatibilidad: Cuando una clase implementa una interfaz, se compromete a cumplir con el contrato definido por esa interfaz. Esto permite que las instancias de esa clase se traten como instancias de la interfaz en determinados contextos.
+. Polimorfismo: Varias clases que implementan la misma interfaz pueden ser tratadas de manera uniforme en ciertos casos.
+. Flexibilidad en el diseño: Permite a diferentes clases proporcionar diferentes implementaciones para los mismos métodos y atributos.
+. Separación de preocupaciones: Las interfaces ayudan a separar las preocupaciones en un programa al definir contratos claros entre las clases.
